@@ -1,5 +1,32 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.21;
+
+//for循环语法
+//Solidity的 for 循环的语法与C语言，Javascript基本相同，其语法如下：
+//
+//for (init-statement; test-statement; iteration-statement) {
+//// 循环体
+//}
+//
+//for循环有三个控制语句：
+//init-statement 用来在循环开始之前初始化循环变量，只执行一次
+//test-statement 用来判断循环是否已经满足退出条件，每一轮循环都会执行一次判断
+//iteration-statement 用来在每一轮循环执行完后（也就是执行完循环体后），改变循环变量的值
+//例如下面的示例中我们可以看到 init-statement 是 i=1 ， test-statement 是 i<=10 ， iteration-statement 是 i++ 。
+
+//while循环语法
+//Solidity的 while 循环的语法与C语言，Javascript基本相同，其语法如下：
+//
+//while (test-statement) {
+//// 循环体
+//}
+//
+//我们可以看到while循环里面有两个表达式：
+//
+//test-statement
+//循环体
+//while 循环在每次循环开始前，首先判断 test-statement 是否为 true 。如果是则把循环体执行一遍，如果 test-statement 为 false ，那么就退出循环并继续执行余下的代码。通常情况下你都需要在循环体里面修改循环控制变量，
+//使得 test-statement 在适当的时候执行结果为 false 而终止循环。
 contract InsertionSort {
     // if else
     function ifElseTest(uint256 _number) public pure returns(bool){
